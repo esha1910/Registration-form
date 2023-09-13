@@ -1,0 +1,119 @@
+body{
+    background-color: cadetblue;
+} 
+.form-container{
+    background-color: teal;
+    width: 450px;
+    height: 400px;
+    padding: 10px;
+    margin: 50px 450px;
+    box-shadow: 20px 20px 20px 0px rgba(0,0,0,0.5);
+}
+
+.form-container h2{
+    text-align: center;
+}
+.col-25{
+    float: left;
+    padding: 6px;
+    width: 25%;
+    font-weight: bold;
+}
+
+.row{
+    margin-left:20px;
+}
+.col-75 {
+    padding: 6px;
+    float:left;
+    width: 65%;
+}
+
+.box input, select{
+    height: 25px;
+    width: 230px;
+    /* padding: 5px; */
+    margin-right: 10px;
+}
+
+/* 
+a(href="#").coolBeans hover me
+.coolBeans
+  border 2px solid currentColor
+  border-radius 3rem
+  color yellow
+  font-family roboto
+  font-size 4rem
+  font-weight 100
+  overflow hidden
+  padding 1rem 2rem
+  position relative
+  text-decoration none
+  transition .2s transform ease-in-out
+  will-change transform
+  z-index 0
+  
+  &::after
+    background-color yellow
+    border-radius 3rem
+    content: ''
+    display block
+    height 100%
+    width 100%
+    position absolute
+    left 0
+    top 0
+    transform translate(-100%, 0) rotate(10deg)
+    transform-origin top left
+    transition .2s transform ease-out
+    will-change transform
+    z-index -1
+    
+  &:hover::after
+    transform translate(0, 0)
+    
+  &:hover
+    border 2px solid transparent
+    color indigo
+    transform scale(1.05)
+    will-change transform */
+
+.submit-btn:hover{
+    background-image:     linear-gradient(
+    to right, 
+    #E7484F,
+    #E7484F 16.65%,
+    #F68B1D 16.65%,
+    #F68B1D 33.3%,
+    #FCED00 33.3%,
+    #FCED00 49.95%,
+    #009E4F 49.95%,
+    #009E4F 66.6%,
+    #00AAC3 66.6%,
+    #00AAC3 83.25%,
+    #732982 83.25%,
+    #732982 100%,
+    #E7484F 100%
+    );
+       animation:slidebg 2s linear infinite;
+     }
+     
+     
+.submit-btn{
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    padding: 5px 10px;
+    margin: 20px 180px;
+    background-color:dodgerblue;
+    border: 2px solid dodgerblue;
+    border-radius: 3px;
+    font-weight: bolder;
+}
+/*
+.submit-btn:hover{
+    opacity: 1;
+} */
+.error-message {
+    color: red;
+}

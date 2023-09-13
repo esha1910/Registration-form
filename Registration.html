@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Form with JavaScript Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1{
+            margin-top: 50px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Validation</h1>
+    <form id="myForm" method="post" onsubmit="return validateForm()">
+        <div class="form-container">
+            <h2>Registration</h2>
+        <div class="form-group">
+            <div class="col-25 row">
+                <label for="name">Name:</label>
+            </div>
+            <div class="col-75 box">
+                <input type="text" id="name" name="name" required>
+                <span class="error-message" id="name-error"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-25 row">
+                <label for="email">Email:</label>
+            </div>
+            <div class="col-75 box">
+                <input type="email" id="email" name="email" required>
+                <span class="error-message" id="email-error"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-25 row">
+                <label for="password">Password:</label>
+            </div>
+            <div class="col-75 box">
+                <input type="password" id="password" name="password" required>
+                <span class="error-message" id="password-error"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-25 row">
+                <label>Gender:</label>
+            </div>
+            <div class="col-75">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+                <span class="error-message" id="gender-error"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-25 row">
+                <label>Hobbies:</label>
+            </div>
+            <div class="col-75">
+                <input type="checkbox" id="hobby1" name="hobbies[]" value="reading">
+                <label for="hobby1">Reading</label>
+                <input type="checkbox" id="hobby2" name="hobbies[]" value="sports">
+                <label for="hobby2">Sports</label>
+                <input type="checkbox" id="hobby3" name="hobbies[]" value="music">
+                <label for="hobby3">Music</label>
+                <span class="error-message" id="hobbies-error"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-25 row">
+                <label for="country">Country:</label>
+            </div>
+            <div class="col-75">
+                <select id="country" name="country" required>
+                    <option value="">Select</option>
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">UK</option>
+                </select>
+                <span class="error-message" id="country-error"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Submit" class="submit-btn">
+    </div>
+    </div>
+    </form>
+    <script src="Register.js"></script>
+</body>
+</html>
